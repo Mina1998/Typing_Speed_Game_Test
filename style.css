@@ -44,6 +44,14 @@ body {
     color: #009688;
 }
 
+.message span::before {
+    content: "[ ";
+}
+
+.message span::after {
+    content: " ]";
+}
+
 .start {
     width: 100%;
     background-color: #009688;
@@ -78,6 +86,7 @@ input {
     caret-color: var(--main-color);
     font-size: 20px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 input:focus {
